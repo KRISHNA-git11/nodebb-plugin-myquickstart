@@ -1,0 +1,46 @@
+{
+  "name": "nodebb-plugin-myquickstart",
+  "version": "1.0.0",
+  "description": "Demo plugin for testing different features",
+  "main": "library.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/KRISHNA-git11/nodebb-plugin-myquickstart"
+  },
+  "keywords": [
+    "nodebb",
+    "plugin",
+    "quickstart",
+    "shell"
+  ],
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "git add"
+    ]
+  },
+  "author": {
+    "name": "KrishnaBollina",
+    "email": "bollina.saikrishna98@gmail.com"
+  },
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "nbbpm": {
+    "compatibility": "^1.15.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "13.2.1",
+    "@commitlint/config-angular": "13.2.0",
+    "eslint": "8.0.1",
+    "eslint-config-nodebb": "0.0.3",
+    "eslint-plugin-import": "2.25.2",
+    "husky": "7.0.4",
+    "lint-staged": "11.2.3"
+  }
+}
